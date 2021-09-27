@@ -1,0 +1,28 @@
+.bordered {
+    border: thick dashed blue;
+}
+
+p {
+    border: thin solid black;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+li {
+    color: olive;
+    font-family: Comic Sans MS;
+
+}
+
+/* add a border around paragraphs and change their font to comic sans */
+p {
+    font-family: Comic Sans MS;
+    border: thin solid black;
+}
+
+/* give divs a different background color */
+div {
+    background-color: aliceblue;    /* this is a real named color in CSS! */
+}

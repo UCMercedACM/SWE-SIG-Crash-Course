@@ -385,6 +385,9 @@ Luckily, we can always change them now by editing [index.css](index.css).
 
 To sum it all up, we learned about what **CSS** means, how to read and write it, a few basic properties and the values they expect, and how to link it into our webpage!
 
+## Resources
+[MDN CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[FreeCodeCamp](https://www.freecodecamp.org/news/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11/)
 
 
 
