@@ -1,8 +1,14 @@
 # Intro to HTML and CSS
 
-
 # Getting Started
-Install VS Code onto your system 
+
+VISIT THIS LINK FOR REFERENCE
+
+```
+https://github.com/UCMercedACM
+```
+
+Install VS Code onto your system
 
 ```
 https://code.visualstudio.com/download
@@ -14,17 +20,18 @@ Navigate to Extensions and add Liveserver
 https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 ```
 
-Open VS Code and create a folder named "Intro_To_HTML" create two files named ```index.html``` and ```index.css```
+Open VS Code and create a folder named "Intro_To_HTML" create two files named `index.html` and `index.css`
 
 ## How do websites work?
-![client-server](https://miro.medium.com/max/600/1*hOtHLLuo9GUBu6Hoy0qLiw.png)
 
+![client-server](https://miro.medium.com/max/600/1*hOtHLLuo9GUBu6Hoy0qLiw.png)
 
 ## Intro to HTML
 
 HTML Stands for Hyper Text Markup Language
 
 This is the building block for any website you visit. Visit this link and right click on the page, navigate to Inspect.
+
 ```
 https://www.w3schools.com/html/html_basic.asp
 ```
@@ -32,13 +39,14 @@ https://www.w3schools.com/html/html_basic.asp
 Here you will see the HTML for this page.
 
 ## index.html
+
 When deploying your website to a webserver it looks for the "first" item in your directory which would be "index.html" always name your main HTML file "index.html"
 
-
 # Basic File Structure
-Each HTML file starts with a ```<!DOCTYPE html>``` this indicates that the file is written in html, add this to the top of your file.
 
-Lets add some basic code to your HTML File. We will come back to this in a minute! 
+Each HTML file starts with a `<!DOCTYPE html>` this indicates that the file is written in html, add this to the top of your file.
+
+Lets add some basic code to your HTML File. We will come back to this in a minute!
 
 ```
 <!DOCTYPE html>
@@ -58,9 +66,10 @@ Lets add some basic code to your HTML File. We will come back to this in a minut
 Add this to your html File and save it. We will then right click on your index.html and click "Open with live Server" You will now see your first website!
 
 ## Commenting
-To comment sections of HTML we encapsulate it with ```<!-- --->```
 
-For example 
+To comment sections of HTML we encapsulate it with `<!-- --->`
+
+For example
 
 ```
 <!--
@@ -77,38 +86,42 @@ html>
 </html>
 --->
 ```
+
 # More about Tags
-Tags are an essential part of understanding HTML. Tags begin with an opening tag ```<tag>``` and closing tag with a forward slash ```</tag>```
-Tags enclose either plan text or other tags. In the example above you can see we have an ```<html></html>``` tag that encloses the entire file. Inside this tag we start defining other elements of our page including the ```<head></head>```  and the ```<body></body>``` tag.
 
-* ### ```<head>```
-Tags placed inside the head tag does not render to the page. This is used for refering to other files such as CSS and or weblinks that work with your site.
+Tags are an essential part of understanding HTML. Tags begin with an opening tag `<tag>` and closing tag with a forward slash `</tag>`
+Tags enclose either plan text or other tags. In the example above you can see we have an `<html></html>` tag that encloses the entire file. Inside this tag we start defining other elements of our page including the `<head></head>` and the `<body></body>` tag.
 
+- ### `<head>`
 
-* ### ```<body>```
-Your markup language will be typed within this tag. This is where you include your title, paragraphs, pictures or links. 
+  Tags placed inside the head tag does not render to the page. This is used for refering to other files such as CSS and or weblinks that work with your site.
 
+- ### `<body>`
 
+  Your markup language will be typed within this tag. This is where you include your title, paragraphs, pictures or links.
 
-* ## ```<h1></h1>```
-header tags stand for "Header size (insert 1-6)"  1 being the biggest sized header.
+- ## `<h1></h1>`
 
-* ## ```<p></p>```
-Paragraph tags display large chunks of text
+  header tags stand for "Header size (insert 1-6)" 1 being the biggest sized header.
 
-* ## ```<a href="(insert link)"></a>```
-This adds an hyperlink to your webpage, anything added within the tag will be hyperlinked.
+- ## `<p></p>`
 
-* ## ```<ol></ol>```
-An ordered list of ```<li></li>``` (Think of 1.,2.,3.)
+  Paragraph tags display large chunks of text
 
-* ## ```<ul></ul>```
-Unordered lists of items. (Think of bullet Points)
+- ## `<a href="(insert link)"></a>`
 
-* ## ```<li></li>```
-This Tag is used for defining the items within the lists above
+  This adds an hyperlink to your webpage, anything added within the tag will be hyperlinked.
 
+- ## `<ol></ol>`
 
+  An ordered list of `<li></li>` (Think of 1.,2.,3.)
+
+- ## `<ul></ul>`
+
+  Unordered lists of items. (Think of bullet Points)
+
+- ## `<li></li>`
+  This Tag is used for defining the items within the lists above
 
 # Lets update the HTML!
 
@@ -138,10 +151,11 @@ Now that we have covered basics in Tags lets update our HTML:
 </html>
 ```
 
-# The ```<div></div>``` Tag
+# The `<div></div>` Tag
+
 The DIV Tag stand for 'Division' and it does not modify your text by itself. It is used for dividing your webpage into readable sections and for defining areas that your CSS will apply to, we will add this later.
 
-Update your HTML to apply the ```<div></div>``` tag to close the items within your body.
+Update your HTML to apply the `<div></div>` tag to close the items within your body.
 
 ```
 html>
@@ -167,15 +181,16 @@ html>
 </body>
 </html>
 ```
+
 # Lets add an Image!
 
-The ```<img>``` tag displays images onto your website!
+The `<img>` tag displays images onto your website!
 
 Here is an example:
+
 ```
 <img src="https://www.universityofcalifornia.edu/sites/default/files/uc-merced-econ-impact.jpg" alt="UC Merced" />
 ```
-
 
 # Intro To CSS
 
@@ -188,8 +203,8 @@ CSS is written fairly simply:
 
 ```css
 selector {
-    propertyName: value;
-    otherProperty: otherValue;
+  propertyname: value;
+  otherproperty: otherValue;
 }
 ```
 
@@ -198,8 +213,9 @@ The **selector** can be [one of a variety](https://www.w3schools.com/cssref/css_
 The **property** name can be [any one of the comprehensive list](https://www.w3schools.com/cssref/).
 
 The **value** of the property can be - in most situations - [any of those offered](https://www.w3schools.com/cssref/css_units.asp), but for our purposes, we will focus on two basic ones:
-* General measurements by pixels (px)
-* Colors by hex code, RGB, and HSL
+
+- General measurements by pixels (px)
+- Colors by hex code, RGB, and HSL
 
 ### Selectors
 
@@ -207,7 +223,7 @@ To select a **class** of elements on the page, we prepend the class name with a 
 
 ```css
 .className {
-    /* ... */
+  /* ... */
 }
 ```
 
@@ -215,7 +231,7 @@ To select all elements that have a **list of classes**, we list them one after a
 
 ```css
 .classNameOne.classNameTwo {
-    /* ... */
+  /* ... */
 }
 ```
 
@@ -223,7 +239,7 @@ To select an element by its **ID**, we prepend the ID name with a hash (`#`). To
 
 ```css
 #idName {
-    /* ... */
+  /* ... */
 }
 ```
 
@@ -241,7 +257,7 @@ We can change the font size of a particular element with this property. Since we
 
 ```css
 h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 ```
 
@@ -253,27 +269,28 @@ Example:
 
 ```css
 h1 {
-    font-weight: 200;
+  font-weight: 200;
 }
 ```
 
 #### `color`
 
 This property allows us to change the color of text contained by a particular tag. One can use any of the following color code combinations:
-* Named colors: `white`, `red`, `green`, `blue`, `grey`, `black`, ...
-* Hex: `#030123`
-* RGB: `rgb(3, 1, 35)`
-* HSL: `hsl(243, 94%, 7%)`
+
+- Named colors: `white`, `red`, `green`, `blue`, `grey`, `black`, ...
+- Hex: `#030123`
+- RGB: `rgb(3, 1, 35)`
+- HSL: `hsl(243, 94%, 7%)`
 
 Example:
 
 ```css
 body {
-    color: #030123;
+  color: #030123;
 }
 
 a {
-    color: green;
+  color: green;
 }
 ```
 
@@ -283,7 +300,7 @@ With this property, we can choose the color that we would like to be the backgro
 
 ```css
 body {
-    background-color: rgb(3,1,35);
+  background-color: rgb(3, 1, 35);
 }
 ```
 
@@ -303,11 +320,11 @@ Let's write an example where we draw a thick, blue, dashed border around all cla
 
 ```css
 .bordered {
-    border: thick dashed blue;
+  border: thick dashed blue;
 }
 
 p {
-    border: thin solid black;
+  border: thin solid black;
 }
 ```
 
@@ -317,39 +334,38 @@ With this out of the way, let's take a look at some real CSS in the flesh. Comme
 
 ```css
 h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 
 h1 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 /* add a border around paragraphs and change their font to comic sans */
 p {
-    font-family: Comic Sans MS;
-    border: thin solid black;
+  font-family: Comic Sans MS;
+  border: thin solid black;
 }
 
 /* give divs a different background color */
 div {
-    background-color: aliceblue;    /* this is a real named color in CSS! */
+  background-color: aliceblue; /* this is a real named color in CSS! */
 }
-
 ```
 
 Now all that's left is to link this file to our document. But before that...
 
 You may have noticed that we have multiple definitions of `font-size` for `h1` tags. Remember how we mentioned earlier that we would learn what the **cascading** part was of CSS? The answer lay in this example - the way that CSS determines the priority of styles.
 
-
 ## Linking CSS files to our webpage
 
 Now that we've learned how to read and write CSS, how will we link this in to our webpage to apply the styling changes? Easy enough, we use the [`<link>`](#link) tag!
 
 Running down the list of properties for a `<link>`:
-* Our file's path (`href`) is `./index.css`.
-* Our file's type (`type`) is `text/css`.
-* Our file's relationship to the document (`rel`) is a `stylesheet`.
+
+- Our file's path (`href`) is `./index.css`.
+- Our file's type (`type`) is `text/css`.
+- Our file's relationship to the document (`rel`) is a `stylesheet`.
 
 Putting this information all together: `<link href="./index.css" type="text/css" rel="stylesheet" />`
 
@@ -358,26 +374,28 @@ Since this is something that we would like to be loaded prior to the content of 
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- This is where the head is! -->
-        <link href="./index.css" type="text/css" rel="stylesheet" />
-    </head>
-    <body>
-<!-- ... -->
+  <head>
+    <!-- This is where the head is! -->
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ... -->
+  </body>
+</html>
 ```
 
 While we're here, let's also give some elements the class and another the ID we made:
 
 ```html
 <!-- ... -->
-        <div>
-            <h1 class='yourClassName' id='someIDName'>This is h1</h1>
-            <h2>This is h2</h2>
-<!-- ... -->
+<div>
+  <h1 class="yourClassName" id="someIDName">This is h1</h1>
+  <h2>This is h2</h2>
+  <!-- ... -->
+</div>
 ```
 
 With this, we can see the styling changes immediately reflected:
-
 
 Luckily, we can always change them now by editing [index.css](index.css).
 
@@ -386,13 +404,6 @@ Luckily, we can always change them now by editing [index.css](index.css).
 To sum it all up, we learned about what **CSS** means, how to read and write it, a few basic properties and the values they expect, and how to link it into our webpage!
 
 ## Resources
+
 [MDN CSS Docs](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [FreeCodeCamp](https://www.freecodecamp.org/news/the-css-handbook-a-handy-guide-to-css-for-developers-b56695917d11/)
-
-
-
-
-
-
-
-
