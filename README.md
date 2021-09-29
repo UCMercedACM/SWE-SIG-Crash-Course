@@ -1,4 +1,4 @@
-# SWE-SIG-Crash-Course (Fall 2021)
+# SWE SIG Crash Course (Fall 2021)
 ## Table of Contents
 Lessons:
 
