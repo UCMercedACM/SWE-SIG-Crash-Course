@@ -1,6 +1,7 @@
 # Intro to JavaScript
 
-# What *is* JavaScript
+# What _is_ JavaScript
+
 In short, Javascript is a programming language that we use to add interactivity to websites. Interactivity is a very broad term here: it could involve clicking a button to show some text, get data from an external source, or involve rendering a video game on a website!
 
 Today, we'll talk about the core application of Javascript (in the browser, manipulating the DOM); later, we'll discuss things like React and Node.
@@ -14,12 +15,12 @@ Let's open up an HTML file:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>we're going to learn JS!</title>
-    </head>
-    <body>
-        <p>I'm so excited to learn Javascript!</p>
-    </body>
+  <head>
+    <title>we're going to learn JS!</title>
+  </head>
+  <body>
+    <p>I'm so excited to learn Javascript!</p>
+  </body>
 </html>
 ```
 
@@ -28,15 +29,15 @@ We can add Javascript by using the `<script>` tag:
 ```html
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>we're going to learn JS!</title>
-    </head>
-    <body>
-        <p>I'm so excited to learn Javascript!</p>
-        <script>
-            // some Javascript can go here!!
-        </script>
-    </body>
+  <head>
+    <title>we're going to learn JS!</title>
+  </head>
+  <body>
+    <p>I'm so excited to learn Javascript!</p>
+    <script>
+      // some Javascript can go here!!
+    </script>
+  </body>
 </html>
 ```
 
@@ -48,13 +49,13 @@ This is pretty inconvenient though, because we're going to have all of our HTML 
 <!-- sample.html -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>we're going to learn JS!</title>
-    </head>
-    <body>
-        <p>I'm so excited to learn Javascript!</p>
-        <script src="sample.js"></script>
-    </body>
+  <head>
+    <title>we're going to learn JS!</title>
+  </head>
+  <body>
+    <p>I'm so excited to learn Javascript!</p>
+    <script src="sample.js"></script>
+  </body>
 </html>
 ```
 
@@ -65,11 +66,11 @@ Now, let's make our `sample.js` file, and do our customary hello world.
 console.log("Hello World!");
 ```
 
-If you go to your page, it'll look  like nothing has happened. But, we need to look a little closer. Go to your browser's console (usually from the Dev Tools, or "Inspect Element"):
+If you go to your page, it'll look like nothing has happened. But, we need to look a little closer. Go to your browser's console (usually from the Dev Tools, or "Inspect Element"):
 
 Would you look at that! We did it!
 
-But first, exactly *what* did we do? Let's break down our code a little bit, and learn some more about JS.
+But first, exactly _what_ did we do? Let's break down our code a little bit, and learn some more about JS.
 
 ```js
 // sample.js
@@ -78,14 +79,14 @@ console.log("Hello World!");
 
 There are actually quite a few details we can learn about the language:
 
-* `"Hello World!"` is a string, so Javascript supports strings!
-* `console.log()` looks like a function, and the `.` implies some sort of object-based properties
-* there are semicolons! (it turns out, these are optional. maybe more on that in a bit)
-* Javascript seems imperative and sequential! if you don't know what that means, no worries.
+- `"Hello World!"` is a string, so Javascript supports strings!
+- `console.log()` looks like a function, and the `.` implies some sort of object-based properties
+- there are semicolons! (it turns out, these are optional. maybe more on that in a bit)
+- Javascript seems imperative and sequential! if you don't know what that means, no worries.
 
 If you've programmed in languages like C++, Java, or Python, this will all sound familiar to you. And that's great! Many of the basic syntax rules that Javascript has are very C-like.
 
-One other thing: you'll note that we didn't have to do any compiling. That's because Javascript is *interpreted*. More on that later.
+One other thing: you'll note that we didn't have to do any compiling. That's because Javascript is _interpreted_. More on that later.
 
 ## Variables and Types in Javascript
 
@@ -111,13 +112,13 @@ Javascript has 7 "primitive" types, which technically means that they are **immu
 
 The primitive types are:
 
-* `Boolean` (`true` or `false`)
-* `Number` (spec'd as a 64-bit float)
-* `String` (uncommon to languages)
-* `BigInt` (arbitrary-precision number)
-* `Undefined` (special)
-* `Null` (special)
-* `Symbol` (new, and out-of-scope of this lecture)
+- `Boolean` (`true` or `false`)
+- `Number` (spec'd as a 64-bit float)
+- `String` (uncommon to languages)
+- `BigInt` (arbitrary-precision number)
+- `Undefined` (special)
+- `Null` (special)
+- `Symbol` (new, and out-of-scope of this lecture)
 
 Here are some examples:
 
@@ -126,7 +127,9 @@ console.log(true);
 console.log(false);
 console.log(42);
 console.log("hello world");
-console.log(12342942374982342342342323423423423234234234234234223423423423423423423423423423);
+console.log(
+  12342942374982342342342323423423423234234234234234223423423423423423423423423423
+);
 console.log(undefined);
 console.log(null);
 // Symbol is out of scope :(
@@ -145,7 +148,7 @@ console.log(0.1 + 0.2 == 0.3);
 
 (implicitly, we've also learned here that `+` works with numbers in the way you might expect, and you can use `==` to perform an equality check)
 
-Javascript also doesn't have `char` or some equivalent (but that's not a huge deal, string-everything is ok). And finally, we'll notice that Javascript doesn't have an explicit pointer type - even though *references are a big deal*, and an understanding of references is important.
+Javascript also doesn't have `char` or some equivalent (but that's not a huge deal, string-everything is ok). And finally, we'll notice that Javascript doesn't have an explicit pointer type - even though _references are a big deal_, and an understanding of references is important.
 
 ### Type Coercion
 
@@ -165,10 +168,10 @@ console.log("42" + 1);
 
 Wow, that set of statements seems needlessly confusing.
 
-* `==` is a **coercive** or **loose** equality. It tries to convert both items to the same type first.
-* `===` is strict equality. It doesn't perform any coercion, and only is true if both sides are the same type and value.
-* `-` only works with `Number` and `Number` on both sides; so, it'll convert everything to `Number` first.
-* `+` is a little trickier! If the types aren't the same, it prefers string concatenation (weird, right), so it'll first try converting everything to a string. That *always works*, so we never explore the path where it's a number!
+- `==` is a **coercive** or **loose** equality. It tries to convert both items to the same type first.
+- `===` is strict equality. It doesn't perform any coercion, and only is true if both sides are the same type and value.
+- `-` only works with `Number` and `Number` on both sides; so, it'll convert everything to `Number` first.
+- `+` is a little trickier! If the types aren't the same, it prefers string concatenation (weird, right), so it'll first try converting everything to a string. That _always works_, so we never explore the path where it's a number!
 
 This brings the interesting question: what happens in this snippet?
 
@@ -183,12 +186,12 @@ Coercion also happens with booleans: values that are `0`, `null`,`undefined`, `"
 
 ### Everything is an Object
 
-It turns out, everything in Javascript is an *object* - and we mean object in an *object-oriented* programming way.
+It turns out, everything in Javascript is an _object_ - and we mean object in an _object-oriented_ programming way.
 
 Let's take arrays, for example. Like many other programming languages, Javascript supports variable-length arrays (which are really more like lists).
 
 ```js
-let arr = [1,2, "cat", "dog"];
+let arr = [1, 2, "cat", "dog"];
 // yup, JS lets you have elements with different types in arrays
 
 console.log(arr[2]);
@@ -205,17 +208,16 @@ console.log(arr);
 // [1,2,"cat","dog","🥺"]
 ```
 
-
 That's right, this array was an object. Under the hood, when we called `let arr`, we "called the constructor for an array" (not... entirely true). Then, when we do things like `.length` or `.push()`, we're accessing variables or using class functions respectively!
 
-This is the case for *every data type* in Javascript, including the primitive ones we discussed earlier! They all stem from one "class" (not entirely true) called `Object`, which has a [wide variety of predefined properties and methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object). You'll probably find the `toString()` method helpful later on. This is very similar to how Java works.
+This is the case for _every data type_ in Javascript, including the primitive ones we discussed earlier! They all stem from one "class" (not entirely true) called `Object`, which has a [wide variety of predefined properties and methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object). You'll probably find the `toString()` method helpful later on. This is very similar to how Java works.
 
 Exactly how do objects work in Javascript? Well, they're **key-value** pairs. In fact, that makes the `Object` class itself very useful: it's a dictionary! If you've heard of JSON (JavaScript Object Notation), this next syntax is going to be quite familiar:
 
 ```js
 let dict = {
-    key1: "hey there!",
-    key2: "i'm an object!"
+  key1: "hey there!",
+  key2: "i'm an object!",
 };
 
 console.log(dict);
@@ -234,14 +236,13 @@ console.log(dict.key1);
 
 Hopefully, this should look somewhat familiar to arrays, because arrays **are just a type of object**!
 
-
 ### let, var, and const
 
 So far, we've discussed using the `let` keyword to define variables. `let` is block-scoped:
 
 ```js
-if (error){
-    let errorMessage = "oh no!";
+if (error) {
+  let errorMessage = "oh no!";
 }
 console.log(error);
 // undefined
@@ -252,8 +253,8 @@ It only maintains its scope in the "block" that it was defined in, which is roug
 There is another keyword, `var` - in fact, this is the original one. `var` is function scoped. We... haven't gone into functions yet, but the key difference is visible here:
 
 ```js
-if (error){
-    var errorMessage = "oh no!";
+if (error) {
+  var errorMessage = "oh no!";
 }
 console.log(error);
 // "oh no!"
@@ -279,7 +280,7 @@ CONSTANT_OBJECT = {};
 
 Okay, well that first example makes sense. But what's up with the second one? Well, recall that all data types in Javascript are objects, and therefore all variables are references.
 
-So, what `const` really guarantees is that the reference will always stay the same. With primitive data types, that's great: because they're immutable, once the value is created, it'll never change. But, for every non-primitive data type, the object *is mutable*, and so it can change at any point without changing the underlying reference. Long story short? Using `const` on an object, or an array, or many other data types doesn't guarantee that it's truly constant - it just can't be reassigned.
+So, what `const` really guarantees is that the reference will always stay the same. With primitive data types, that's great: because they're immutable, once the value is created, it'll never change. But, for every non-primitive data type, the object _is mutable_, and so it can change at any point without changing the underlying reference. Long story short? Using `const` on an object, or an array, or many other data types doesn't guarantee that it's truly constant - it just can't be reassigned.
 
 ## Quick Control Flow Stuffs
 
@@ -287,19 +288,17 @@ If you've programmed in a C-like language, control flow in Javascript is nothing
 
 ```js
 let theAnswer = 42;
-if (theAnswer === 42){
-    console.log("The answer to the everything is 42!");
-}
-else if (theAnswer == 42){
-    console.log("LOL you don't know how types work in Javascript");
-}
-else{
-    console.log("So long, thanks for all the fish!");
+if (theAnswer === 42) {
+  console.log("The answer to the everything is 42!");
+} else if (theAnswer == 42) {
+  console.log("LOL you don't know how types work in Javascript");
+} else {
+  console.log("So long, thanks for all the fish!");
 }
 // "The answer to the everything is 42!"
 
-for (let i = 0; i < 5; i++){
-    console.log(i);
+for (let i = 0; i < 5; i++) {
+  console.log(i);
 }
 // 1
 // 2
@@ -308,11 +307,9 @@ for (let i = 0; i < 5; i++){
 // 5
 
 let hungry = true;
-while (hungry){
-    goToBplate();
+while (hungry) {
+  goToBplate();
 }
-
-
 ```
 
 ## Speaking of Functions...
@@ -320,15 +317,15 @@ while (hungry){
 Javascript is a **functional programming language**. By the sound of that, functions are probably pretty important. They look pretty C-like to us:
 
 ```js
-function saySomething(message){
-    console.log(message);
+function saySomething(message) {
+  console.log(message);
 }
 
 saySomething("hey there!");
 // "hey there!"
 
-function squared(n){
-    return n^2;
+function squared(n) {
+  return n ^ 2;
 }
 
 squared(2);
@@ -340,8 +337,8 @@ You start by writing the keyword `function`, then the name of the function, and 
 Note that there are no explicit types here! This can actually make things quite confusing.
 
 ```js
-function adder(a,b){
-    return a + b;
+function adder(a, b) {
+  return a + b;
 }
 
 adder(42, 42);
@@ -355,27 +352,22 @@ adder(42, "42");
 Okay, but how does this help us make websites? Well, the original focus was to change the "Document Object Model", which as you may recall, is a fancy word for our webpage. Let's run through a bare-bones example:
 
 ```html
-<button id="button">
-    click me!
-</button>
-<p>
-    you've clicked the button <span id="clicks">0</span> times
-</p>
+<button id="button">click me!</button>
+<p>you've clicked the button <span id="clicks">0</span> times</p>
 ```
 
 ```js
-document.getElementById("button").addEventListener("click", function(){
-    let clickElement = document.getElementById("clicks");
-    let currentClicks = Number(clickElement.innerHTML);
-    clickElement.innerHTML = currentClicks + 1;
-})
+document.getElementById("button").addEventListener("click", function () {
+  let clickElement = document.getElementById("clicks");
+  let currentClicks = Number(clickElement.innerHTML);
+  clickElement.innerHTML = currentClicks + 1;
+});
 ```
 
 Let's open this up in our web browser and take a peek at what's going on.
 Let's focus in a little bit on this: `document.getElementById(...) ...`. If you're looking for a direct example of the DOM in JS, here it is: the literal `document` object! This is the native JavaScript representation of the current webpage.
 
 Next, we call `getElementById()` on it, with argument `"button"`. This should be pretty self explanatory as to what it does, but let's take a look at what it actually looks like in our console:
-
 
 This is the crux of the DOM. Every tag in our document is representable as an object in native JavaScript (notice the properties `classList` or `attributes`?). We call each of these tags a **node** on our page. Why a node?
 
@@ -411,7 +403,7 @@ We declare a variable to be the element on our page with ID "clicks", cast the c
 
 ```js
 function myFunc() {
-    console.log("Hi!");
+  console.log("Hi!");
 }
 ```
 
@@ -419,11 +411,12 @@ Is just as valid as:
 
 ```js
 function myFunc() {
-    console.log("Hi!")
+  console.log("Hi!");
 }
 ```
 
-
 ## Additional Resources
-* [Mozilla's guide to the DOM and its interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
-* [w3schools' examples of DOM events](https://www.w3schools.com/js/js_events.asp)
+
+- [Mozilla's guide to the DOM and its interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [w3schools' examples of DOM events](https://www.w3schools.com/js/js_events.asp)
+- [10 Java Projects in 10 Hours](https://youtu.be/dtKciwk_si4)
