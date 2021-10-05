@@ -420,3 +420,4 @@ function myFunc() {
 - [Mozilla's guide to the DOM and its interfaces](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 - [w3schools' examples of DOM events](https://www.w3schools.com/js/js_events.asp)
 - [10 JavaScript Projects in 10 Hours](https://youtu.be/dtKciwk_si4)
+- [Video](https://www.destroyallsoftware.com/talks/wat)
