@@ -63,7 +63,7 @@
 
 // let hungry = true;
 // while (hungry){
-//     goToBplate();
+//     goToPav();
 // }
 
 //DOM MANIPULATION
