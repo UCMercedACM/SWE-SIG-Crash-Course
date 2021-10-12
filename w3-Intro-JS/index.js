@@ -1,4 +1,4 @@
-//Part 1
+// Part 1
 // console.log("Hello World!");
 
 //Part 2
@@ -40,7 +40,7 @@
 
 
 //Part 6 Control Flow
-// let theAnswer = 42;
+// let theAnswer = "42";
 // if (theAnswer === 42){
 //     console.log("The answer to the everything is 42!");
 // }
@@ -52,23 +52,30 @@
 // }
 // // "The answer to the everything is 42!"
 
-// for (let i = 0; i < 5; i++){
+// for(let i = 0; i < 5; i++){
 //     console.log(i);
 // }
-// // 1
-// // 2
-// // 3
-// // 4
-// // 5
+// 1
+// 2
+// 3
+// 4
+// 5
 
 // let hungry = true;
 // while (hungry){
-//     goToPav();
+//     // console.log("I Made it");
 // }
 
 //DOM MANIPULATION
-// document.getElementById("button").addEventListener("click", function(){
-//     let clickElement = document.getElementById("clicks");
-//     let currentClicks = Number(clickElement.innerHTML);
-//     clickElement.innerHTML = currentClicks + 1;
-// })
+document.getElementById("button").addEventListener("click", 
+
+function(){
+    let clickElement = document.getElementById("clicks");
+    let currentClicks = Number(clickElement.innerHTML);
+    clickElement.innerHTML = currentClicks + 1;
+    console.log(currentClicks);
+}
+
+)
+
+
