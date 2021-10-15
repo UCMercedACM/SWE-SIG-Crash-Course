@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-api-workshop",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "ExpressJS Backend App coded in API Workshop.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "api",
+    "backend",
+    "workshop",
+    "ucm",
+    "acm"
+  ],
+  "author": "Sal Saygi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^3.0.0",
+    "uuid": "^8.3.2"
+  }
+}
