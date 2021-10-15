@@ -4,6 +4,9 @@ fetch('https://jsonplaceholder.typicode.com/posts').then(function (response) { /
 }).then(function (data) {
 	// This is the JSON from our response
 	console.log(data);
+  var title = document.getElementById('user');
+  // set the src of the image object
+  title.src = data;
 }).catch(function (err) {
 	// There was an error
 	console.warn('Something went wrong.', err);
