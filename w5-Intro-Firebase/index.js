@@ -1,10 +1,9 @@
 
 const firebaseConfig = {
-  
+ 
   };
 
 firebase.initializeApp(firebaseConfig);
-
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');

@@ -3,7 +3,7 @@
 ## Getting Started
 
 VS Code `https://code.visualstudio.com/`
-Download Postman `https://nodejs.org/en/`
+Download NodeJS `https://nodejs.org/en/`
 Firestore Documentation `https://firebase.google.com/docs/firestore`
 
 ## What is Firebase
