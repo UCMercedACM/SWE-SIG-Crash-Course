@@ -1,12 +1,6 @@
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDK8UahvFj-8rRyHSQ3DqW2J3iUE1Y_eEI",
-  authDomain: "workshop-69855.firebaseapp.com",
-  projectId: "workshop-69855",
-  storageBucket: "workshop-69855.appspot.com",
-  messagingSenderId: "476526753135",
-  appId: "1:476526753135:web:b39214002c46bd43ff649a",
-  measurementId: "G-54MMYH7M1M"
+  
   };
 
 firebase.initializeApp(firebaseConfig);
