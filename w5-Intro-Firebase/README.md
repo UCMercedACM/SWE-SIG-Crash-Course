@@ -22,7 +22,7 @@ Firebase is a service offered by google that has many applications including
 
 Create a new folder named Intro-To-Firebase and open this in VS Code
 
-Create Four Files
+Create 3 Files
 
 - index.html
 - styles.css
