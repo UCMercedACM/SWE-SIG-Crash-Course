@@ -23,3 +23,7 @@ https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 Open VS Code and create a folder named "Intro_To_HTML" create two files named `index.html` and `index.css`
 
 ## Paste The Code Given to you and start designing away!
+
+# Deploying your website
+
+Follow the steps shown here `https://pages.github.com/`
