@@ -8,5 +8,5 @@ Lessons:
 * [Week 4: How to use APIs](https://github.com/UCMercedACM/SWE-SIG-Crash-Course/tree/main/w4-Intro-APIs)
 * [Week 5: Intro to Databases](https://github.com/UCMercedACM/SWE-SIG-Crash-Course/tree/main/w5-Intro-Firebase)
 * [Week 6: Intro to Frameworks (React)](https://github.com/UCMercedACM/SWE-SIG-Crash-Course/tree/main/w6-Intro-React)
-* Week 7: Deploying WebApps
+* Week 7: React Part 2
  
